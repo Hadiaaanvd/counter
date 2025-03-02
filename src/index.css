@@ -1,0 +1,20 @@
+:root {
+	line-height: 1.5;
+	font-family: Inter;
+	color: rgba(255, 255, 255, 0.87);
+	background: radial-gradient(
+			53.57% 282.15% at 2.14% 50%,
+			rgba(116, 200, 152, 0.15) 0%,
+			rgba(116, 200, 152, 0.03) 100%
+		),
+		#46474f;
+	background-color: #161618;
+	font-synthesis: none;
+}
+
+body {
+	margin: 0;
+	width: 100vw;
+	min-width: 320px;
+	min-height: 100vh;
+}
