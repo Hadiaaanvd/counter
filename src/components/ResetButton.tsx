@@ -4,7 +4,7 @@ import { HiRefresh } from "react-icons/hi";
 import { useCounter } from "../context/counterContext";
 
 const ResetButton = () => {
-	const { reset } = useCounter();
+	const { reset, count } = useCounter();
 	const handleReset = () => {
 		reset();
 		toaster.create({
@@ -21,6 +21,7 @@ const ResetButton = () => {
 			onClick={handleReset}
 			color="teal.500"
 			variant="plain"
+			disabled={count < 1}
 		>
 			<HiRefresh /> Reset Counter
 		</Button>
