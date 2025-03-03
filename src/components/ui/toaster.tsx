@@ -15,7 +15,7 @@ export const toaster = createToaster({
 const getIndicatorColor = (type: string) => {
 	switch (type) {
 		case "success":
-			return "green.500";
+			return "#74C898";
 		case "error":
 			return "red.500";
 		case "warning":
