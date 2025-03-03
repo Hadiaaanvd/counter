@@ -1,54 +1,78 @@
-# React + TypeScript + Vite
+# **Counter App**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Visit https://hadiaaanvd.github.io/counter/ to visit the App
 
-Currently, two official plugins are available:
+A simple counter application built with React, TypeScript, and Vite.  
+This app demonstrates state management using React Context, local storage persistence, and toast notifications using Chakra UI.
 
--   [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
--   [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-	extends: [
-		// Remove ...tseslint.configs.recommended and replace with this
-		...tseslint.configs.recommendedTypeChecked,
-		// Alternatively, use this for stricter rules
-		...tseslint.configs.strictTypeChecked,
-		// Optionally, add this for stylistic rules
-		...tseslint.configs.stylisticTypeChecked,
-	],
-	languageOptions: {
-		// other options...
-		parserOptions: {
-			project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-			tsconfigRootDir: import.meta.dirname,
-		},
-	},
-});
+## 🚀 **Features**
+✅ **Increment Counter**: Click the `+1` button to increase the count.  
+✅ **Global State Management**: Uses React Context API with a `CounterProvider`.  
+✅ **Custom Hook**: Implements `useCounter()` for reusable counter logic.  
+✅ **Toast Notifications**: Shows a toast message on increment and reset actions using Chakra UI.  
+✅ **Responsive Design**: Ensures a smooth experience on both desktop and mobile devices.  
+### **Add On**
+✅ **Local Storage Persistence**: Counter value is stored and retrieved from local storage.  
+✅ **Reset Counter**: Reset the counter value to zero.  
+
+
+---
+
+
+## 🛠 **Tech Stack**
+-  **React** 
+-  **TypeScript**
+-  **Chakra UI**
+-  **React Context API** 
+-  **Local Storage** (for data persistence)
+
+
+---
+
+
+🔧 Installation & Setup
+
+1️⃣ Clone the repository:
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default tseslint.config({
-	plugins: {
-		// Add the react-x and react-dom plugins
-		"react-x": reactX,
-		"react-dom": reactDom,
-	},
-	rules: {
-		// other rules...
-		// Enable its recommended typescript rules
-		...reactX.configs["recommended-typescript"].rules,
-		...reactDom.configs.recommended.rules,
-	},
-});
+git clone https://github.com/your-username/counter-app.git
+cd counter-app
 ```
+2️⃣ Install dependencies:
+```
+npm install
+```
+or
+```
+yarn install
+```
+3️⃣ Start the development server:
+```
+npm run dev
+```
+or
+```
+yarn dev
+```
+📍 The app should now be running at http://localhost:5173.
+
+
+---
+
+
+## **🔮 Future Enhancements**
+
+ **Add decrement functionality**
+
+ **Implement smooth animations for a better user experience**
+
+ **Allow users to set a counter limit**
+
+ **Add Dark mode and light mode with chakra color-mode functionality**
+
+
+
+
