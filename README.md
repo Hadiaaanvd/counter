@@ -67,8 +67,6 @@ yarn dev
 
  **Add decrement functionality**
 
- **Implement smooth animations for a better user experience**
-
  **Allow users to set a counter limit**
 
  **Add Dark mode and light mode with chakra color-mode functionality**
