@@ -15,7 +15,7 @@ This app demonstrates state management using React Context, local storage persis
 ✅ **Custom Hook**: Implements `useCounter()` for reusable counter logic.  
 ✅ **Toast Notifications**: Shows a toast message on increment and reset actions using Chakra UI.  
 ✅ **Responsive Design**: Ensures a smooth experience on both desktop and mobile devices.  
-### **Add On**
+### **Add Ons**
 ✅ **Local Storage Persistence**: Counter value is stored and retrieved from local storage.  
 ✅ **Reset Counter**: Reset the counter value to zero.  
 
