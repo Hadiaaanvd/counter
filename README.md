@@ -38,7 +38,7 @@ This app demonstrates state management using React Context, local storage persis
 
 1️⃣ Clone the repository:
 ```
-git clone https://github.com/your-username/counter-app.git
+git clone https://github.com/Hadiaaanvd/counter-app.git
 cd counter-app
 ```
 2️⃣ Install dependencies:
@@ -66,8 +66,6 @@ yarn dev
 ## **🔮 Future Enhancements**
 
  **Add decrement functionality**
-
- **Implement smooth animations for a better user experience**
 
  **Allow users to set a counter limit**
 
