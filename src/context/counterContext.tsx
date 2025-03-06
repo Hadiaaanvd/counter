@@ -6,18 +6,17 @@ import {
 	useEffect,
 } from "react";
 
-interface CounterContextType {
+type CounterContextType = {
 	count: number;
 	increment: () => void;
 	reset: () => void;
-}
+};
 
 const CounterContext = createContext<CounterContextType | undefined>(undefined);
-
 export const CounterProvider: React.FC<{ children: ReactNode }> = ({
 	children,
 }) => {
-	const [count, setCount] = useState<number>(() => {
+	const [count, setCount] = useState(() => {
 		const savedCount = localStorage.getItem("count");
 		return savedCount !== null ? parseInt(savedCount, 10) : 0;
 	});
@@ -39,7 +38,8 @@ export const CounterProvider: React.FC<{ children: ReactNode }> = ({
 export const useCounter = (): CounterContextType => {
 	const context = useContext(CounterContext);
 	if (!context) {
-		throw new Error("useCounter must be used within a CounterProvider");
+		console.warn("useCounter must be used within a CounterProvider");
+		return { count: 0, increment: () => {}, reset: () => {} };
 	}
 	return context;
 };

@@ -7,11 +7,11 @@ const CounterCard = () => {
 		<Box
 			px={4}
 			py={14}
-			w="sm"
 			textAlign="center"
 			alignContent="center"
 			background="#3e4247"
 			boxShadow="2xl"
+			w={{ base: "100%", md: "sm" }}
 			h={{ base: "100vh", md: "auto" }}
 			rounded={{ base: "0", md: "xl" }}
 		>
@@ -19,17 +19,16 @@ const CounterCard = () => {
 				<VStack>
 					<Heading size="xl" letterSpacing="tight">
 						<Highlight
-							query="Typing!"
+							query="Counting!"
 							styles={{ color: "teal.500" }}
 						>
-							Let's start Typing!
+							Let's start Counting!
 						</Highlight>
 					</Heading>
 					<Text fontSize="sm">
 						Click +1 to increase and Reset to start over.
 					</Text>
 				</VStack>
-
 				<Counter />
 				<ResetButton />
 			</VStack>
